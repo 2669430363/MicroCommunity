@@ -1,0 +1,42 @@
+{
+  "autoMove": true,
+  "id": "addressId",
+  "name": "userAddress",
+  "desc": "用户联系地址",
+  "shareParam": "userId",
+  "shareColumn": "user_id",
+  "shareName": "user",
+  "tableName": "u_user_address",
+  "param": {
+    "addressId": "address_id",
+    "userId": "user_id",
+    "tel": "tel",
+    "areaCode": "area_code",
+    "address": "address",
+    "isDefault": "is_default",
+    "statusCd": "status_cd"
+  },
+  "required": [
+    {
+      "code": "userId",
+      "msg": "用户不能为空"
+    },
+    {
+      "code": "areaCode",
+      "msg": "地区编码不能为空"
+    },
+    {
+      "code": "tel",
+      "msg": "手机号不能为空"
+    },
+    {
+      "code": "address",
+      "msg": "详细地址不能为空"
+    },
+    {
+      "code": "isDefault",
+      "msg": "默认地址不能为空"
+    }
+  ]
+}
+

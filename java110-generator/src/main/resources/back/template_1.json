@@ -1,0 +1,43 @@
+{
+  "autoMove": true,
+  "id": "attrId",
+  "name": "ownerAttr",
+  "desc": "业主属性",
+  "shareParam": "community_id",
+  "shareColumn": "communityId",
+  "shareName": "user",
+  "newBusinessTypeCd": "BUSINESS_TYPE_SAVE_OWNER_ATTR_INFO",
+  "updateBusinessTypeCd": "BUSINESS_TYPE_UPDATE_OWNER_ATTR_INFO",
+  "deleteBusinessTypeCd": "BUSINESS_TYPE_DELETE_OWNER_ATTR_INFO",
+  "newBusinessTypeCdValue": "110200030001",
+  "updateBusinessTypeCdValue": "110200040001",
+  "deleteBusinessTypeCdValue": "110200050001",
+  "businessTableName": "business_building_owner_attr",
+  "tableName": "building_owner_attr",
+  "param": {
+    "attrId": "attr_id",
+    "bId": "b_id",
+    "memberId": "member_id",
+    "specCd": "spec_cd",
+    "value": "value",
+    "statusCd": "status_cd",
+    "createTime": "create_time",
+    "communityId": "community_id",
+    "operate": "operate"
+  },
+  "required": [
+    {
+
+      "code": "memberId",
+      "msg": "业主ID不能为空"
+    },
+    {
+      "code": "specCd",
+      "msg": "任务属性不能为空"
+    },
+    {
+      "code": "value",
+      "msg": "任务属性值不能为空"
+    }
+  ]
+}

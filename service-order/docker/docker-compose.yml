@@ -1,0 +1,25 @@
+version: '2'
+services:
+   centerservice:
+       container_name: orderservice-1
+       build:
+          context: .
+          dockerfile: Dockerfile
+       restart: always
+       ports:
+       - "8001:8001"
+       volumes:
+       - ../target/service-order.jar:/root/target/service-order.jar
+       networks:
+       - java110-net
+#       mem_limit: 1024m
+#       extra_hosts:
+#       - "dev.java110.com:172.19.255.255"
+#       - "dev.db.java110.com:172.19.255.255"
+#       - "dev.zk.java110.com:172.19.255.255"
+#       - "dev.kafka.java110.com:172.19.255.255"
+#       - "dev.redis.java110.com:172.19.255.255"
+#       - "api.java110.com:172.19.255.255"
+networks:
+  java110-net:
+    external: true

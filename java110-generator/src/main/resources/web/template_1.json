@@ -1,0 +1,91 @@
+{
+  "templateName": "拼团设置",
+  "directories": "goods",
+  "templateCode": "groupBuySetting",
+  "templateKey": "settingId",
+  "templateKeyName": "设置ID",
+  "searchCode": "settingId",
+  "searchName": "设置ID",
+  "conditions": [
+    {
+      "name": "拼团名称",
+      "inputType": "input",
+      "code": "groupBuyName",
+      "whereCondition": "equal"
+    },
+    {
+      "name": "拼团时效",
+      "inputType": "input",
+      "code": "validHours",
+      "whereCondition": "equal"
+    },
+    {
+      "name": "设置ID",
+      "inputType": "input",
+      "code": "settingId",
+      "whereCondition": "equal"
+    }
+  ],
+  "columns": [
+    {
+      "code": "groupBuyName",
+      "cnCode": "拼团名称",
+      "desc": "必填，请填写拼团名称",
+      "required": true,
+      "hasDefaultValue": false,
+      "inputType": "input",
+      "limit": "maxLength",
+      "limitParam": "256",
+      "limitErrInfo": "拼团名称不能超过256位",
+      "show": true
+    },
+    {
+      "code": "groupBuyDesc",
+      "cnCode": "拼团简介",
+      "desc": "必填，请填写拼团简介",
+      "required": true,
+      "hasDefaultValue": false,
+      "inputType": "input",
+      "limit": "maxLength",
+      "limitParam": "500",
+      "limitErrInfo": "拼团简介不能超过500位",
+      "show": true
+    },
+    {
+      "code": "validHours",
+      "cnCode": "拼团时效",
+      "desc": "必填，请填写拼团时效",
+      "required": true,
+      "hasDefaultValue": false,
+      "inputType": "input",
+      "limit": "num",
+      "limitParam": "",
+      "limitErrInfo": "拼团时效不是有效数字",
+      "show": true
+    },
+    {
+      "code": "startTime",
+      "cnCode": "开始时间",
+      "desc": "必填，请填写开始时间",
+      "required": true,
+      "hasDefaultValue": false,
+      "inputType": "input",
+      "limit": "datetime",
+      "limitParam": "",
+      "limitErrInfo": "开始时间不是有效日期",
+      "show": true
+    },
+    {
+      "code": "endTime",
+      "cnCode": "结束时间",
+      "desc": "必填，请填写结束时间",
+      "required": true,
+      "hasDefaultValue": false,
+      "inputType": "input",
+      "limit": "datetime",
+      "limitParam": "",
+      "limitErrInfo": "结束时间不是有效日期",
+      "show": true
+    }
+  ]
+}
